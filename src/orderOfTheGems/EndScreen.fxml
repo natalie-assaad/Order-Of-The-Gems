@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="384.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orderOfTheGems.EndScreenController">
+   <children>
+      <ImageView fitHeight="402.0" fitWidth="549.0" layoutX="-101.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/resources/OldMap.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="110.0" layoutX="287.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/resources/HappyPirate.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="104.0" layoutY="50" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Over" wrappingWidth="202.26708984375">
+         <font>
+            <Font name="Apple Chancery" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You did it!  You collected all gems in the right order." textAlignment="CENTER" wrappingWidth="275.4921875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="49.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Total Time Was:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalTimeText" layoutX="231.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+         <font>
+            <Font name="Apple Chancery" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="94.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="130.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Extra Time:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="extraTimeText" layoutX="230.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bTime">
+         <font>
+            <Font name="Apple Chancery" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="71.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+         <font>
+            <Font name="Apple Chancery" size="26.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="171.0" layoutY="215.0" startX="-100.0" />
+      <Text layoutX="130.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final Time:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="overallTimeText" layoutX="230.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tTime">
+         <font>
+            <Font name="Apple Chancery" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="310" strokeType="OUTSIDE" strokeWidth="0.0" text="Want to beat that time?  The choice is yours:">
+         <font>
+            <Font name="Apple Chancery" size="20.0" />
+         </font>
+      </Text>
+      <SplitMenuButton fx:id="menuButton" layoutX="150.0" layoutY="332.0" mnemonicParsing="false" text="I want to...">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#menuClickHandler" text="Play Again" />
+          <MenuItem mnemonicParsing="false" onAction="#menuClickHandler" text="Quit" />
+        </items>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>
